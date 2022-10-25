@@ -1,38 +1,231 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: var(--font-main);
+}
+
+:root {
+  --clr-almost-white: #fafafa;
+  --clr-gray: #696969;
+  --clr-almost-black: rgb(20, 20, 20);
+
+  --font-main: 'Epilogue', sans-serif;
+}
+
 .App {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 
+  height: 70px; */
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+.snap-logo {
+  color: var(--clr-almost-black);
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.dropdown-container {
+  padding: 1rem;
+}
+
+.dropdown-img {
+  cursor: pointer;
+}
+
+.hero-image-container {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100.25%;
+  /* height: auto; */
+  /* height: 270px; */
+}
+
+.slogan {
+  color: var(--clr-almost-black);
+  width: 100%;
+  font-size: 2.25rem;
+  font-weight: 700;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  margin-top: 2.5rem;
+}
+
+.description {
+  color: var(--clr-gray);
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.7rem;
+}
+
+.learn-more-button {
+  border: none;
+  background-color: var(--clr-almost-black);
+  color: var(--clr-almost-white);
+  width: 9rem;
+  height: 50px;
+  font-weight: 500;
+  font-size: 1.05rem;
+  border-radius: 1.1rem;
+  margin-top: 0.7rem;
+}
+
+.learn-more-button:hover {
+  border: 1px var(--clr-almost-black) solid;
+  background-color: var(--clr-almost-white);
+  color: var(--clr-almost-black);
+  cursor: pointer;
+}
+
+.clients {
+  /* padding: 0.7rem; */
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.client {
+  width: 75%;
+}
+
+.menu-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu {
+  background-color: var(--clr-almost-white);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 1;
+  top: 0;
+
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  color: var(--clr-gray);
+  text-align: left;
+  font-size: 4.5vw;
+  padding: 0.5rem;
+  padding-left: 10%;
+  text-decoration: none;
+  /* border: 1px black solid; */
+}
+
+.drop-down {
+  /* border: 1px black solid; */
+  display: flex;
+  width: auto;
+}
+.arrow-down-container {
+  padding-left: 0.8rem;
+}
+
+.arrow-img {
+  height: 2.5vw;
+  /* width: ; */
+}
+
+.dropdownmenu {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.dropdownitem-container {
+  /* border: 1px black solid; */
+  padding: 0.7rem;
+  padding-left: 3rem;
+  display: flex;
+}
+
+.icon-container {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.7rem;
+  /* border: 1px black solid; */
+}
+
+.icon-img {
+  height: 4.5vw;
+}
+
+.dropdown-title {
+  font-size: 4vw;
+  color: var(--clr-gray);
+  text-decoration: none;
+  /* padding-left: 1rem; */
+}
+
+.login {
+  padding: 1rem 0 1rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.register-button {
+  font-size: 1rem;
+  width: 80%;
+  background-color: var(--clr-almost-white);
+  color: var(--clr-gray);
+  border: 1px var(--clr-almost-black) solid;
+  height: 40px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.register-button:active {
+  background-color: #e0e0e0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.x-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row-reverse;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.x-out-img:hover {
+  cursor: pointer;
 }
