@@ -32,8 +32,9 @@ h6 {
 
   height: 750px;
 
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   /* background-color: red; */
 
   position: fixed;
