@@ -30,6 +30,12 @@ h6 {
   align-items: center;
   flex-direction: column;
 
+  height: 750px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color: red; */
+
   position: fixed;
   bottom: 0;
   right: 0;
