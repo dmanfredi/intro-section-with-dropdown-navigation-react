@@ -13,18 +13,16 @@ const Dropdown = ({ title, items }) => {
 
   return (
     <div className="dropdown-conatiner">
-      <div className="menu-item drop-down">
+      <div
+        className="menu-item drop-down"
+        onClick={() => {
+          handleDropMenuToggle(inDropMenu);
+          setArrow(arrow === arrowDown ? arrowUp : arrowDown);
+        }}
+      >
         {title}
         <div className="arrow-down-container">
-          <img
-            src={arrow}
-            alt="Open"
-            className="arrow-img"
-            onClick={() => {
-              handleDropMenuToggle(inDropMenu);
-              setArrow(arrow === arrowDown ? arrowUp : arrowDown);
-            }}
-          />
+          <img src={arrow} alt="Open" className="arrow-img" />
         </div>
       </div>
       {inDropMenu ? <DropdownMenu items={items}></DropdownMenu> : null}

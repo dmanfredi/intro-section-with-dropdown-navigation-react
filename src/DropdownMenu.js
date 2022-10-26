@@ -2,10 +2,10 @@ import React from 'react';
 import DropdownItem from './DropdownItem';
 
 const DropdownMenu = ({ items }) => {
-  console.log(items);
+  // console.log(items);
   return (
     <>
-      <div className="dropdownmenu">
+      <div className="dropdownmenu slide-in-top">
         {items.map((config, i) => (
           <DropdownItem
             key={i}
