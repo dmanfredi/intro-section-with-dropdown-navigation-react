@@ -289,8 +289,8 @@ h6 {
     padding: 0;
     padding-bottom: 3rem;
     text-align: left;
-    font-size: 5.5vw;
-    font-size: 4.75rem;
+    /* font-size: 5.4vw; */
+    font-size: 4.85rem;
   }
 
   .description {
