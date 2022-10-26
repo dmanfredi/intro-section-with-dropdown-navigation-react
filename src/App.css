@@ -6,6 +6,8 @@ h4,
 h5,
 h6 {
   margin: 0;
+
+  /* overflow-y: hidden; */
 }
 
 *,
@@ -509,6 +511,16 @@ h6 {
   .hero-image {
     height: calc(45vw * 1.25);
     width: 45vw;
+  }
+
+  .client {
+    height: 2vw;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 769px) {
+  .App {
+    height: 162vw;
   }
 }
 
